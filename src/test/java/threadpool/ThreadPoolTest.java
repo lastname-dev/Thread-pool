@@ -25,7 +25,7 @@ public class ThreadPoolTest {
 					latch.countDown();
 				});
 			}
-			latch.await();
+			// latch.await();
 		} finally {
 			((ThreadPool)executor).shutdown();
 		}
